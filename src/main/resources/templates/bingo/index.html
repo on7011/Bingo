@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" media="all" th:href="@{/css/index.css}">
+</head>
+<body>
+	<header>
+		<div class="header_name">
+			<a>BINGO</a>
+		</div>
+	</header>
+	<main>
+		<div class="wrapper">
+			<form method="post" action="/bigo/index">
+				<div class="btn">
+					<button class="result" formaction="/bingo/result">ビンゴを回す</button>
+				</div>
+				<div class="btn2">
+					<button class="results" formaction="/bingo/result2">結果を確認</button>
+				</div>
+				<!-- formaction = データ送信先URLを指定 -->
+				<!-- formaction属性を使うことで複数ボタンでPOSTを振り分ける -->
+			</form>
+		</div>
+	</main>
+
+</body>
+</html>

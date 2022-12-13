@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>BINGO</title>
+<link rel="stylesheet" media="all" th:href="@{/css/result2.css}">
+</head>
+<body>
+	<header>
+		<div class="header_name">
+			<a>BINGO</a>
+		</div>
+	</header>
+
+	<main>
+		<div class="wrapper">
+
+			<div class="box">
+				<span th:text="${result.data}"></span>
+			</div>
+			<div class="back">
+				<!-- <button onclick="location.href='./'">戻る</button> -->
+				<a href="./">戻る</a>
+			</div>
+
+		</div>
+
+	</main>
+</body>
+</html>
