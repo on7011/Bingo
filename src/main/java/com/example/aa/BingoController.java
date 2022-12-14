@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/bingo")
+@RequestMapping("/bingo/")
 public class BingoController {
 
-	// http://localhost:3006/bingo
+	// http://localhost:8080/bingo/
 
 	//	@Autowired
 	//	RandomData randomData;
